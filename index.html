@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Calculatrice</title>
+  </head>
+  <body>
+    <h1 class="text-center my-5 fw-bold">Calculatrice</h1>
+    <div class="calcula">
+      <form class="d-flex container-sm gap-2 center">
+        <input class="form-control" type="number" name="number1" id="number1" required/>
+        <select class="form-control" name="operator" id="operator">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+        </select>
+        <input class="form-control" type="number" name="number2" id="number2" required/>
+        <button class="btn btn-primary" type="submit">Calculer</button>
+      </form>
+    </div>
+    <div>
+      <h5 class="textCalc text-center my-3 fw-bold"></h5>
+      <div class="d-flex justify-content-center">
+        <button class="apparait btn btn-primary">
+          Faire apparaître la calculatrice
+        </button>
+        <button class="disparait btn btn-danger">
+          Faire disparaitre la calculatrice
+        </button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
